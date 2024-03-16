@@ -1,0 +1,30 @@
+Q1. what is list? how will you reverse a list ?
+ans = A list in Python is a versatile data structure used to store a collection of elements. 
+It allows you to hold multiple items in a single variable
+      ex = original_list = [10, 11, 12, 13, 14, 15]
+           reversed_list = original_list[::-1]
+           print(reversed_list)
+
+Q2. How will you remove last object from a list? 
+Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [::-1]?
+
+ans = using pop() function will remove last object.
+      and list slicing will remove last object list1[-1]
+
+Q3.Differentiate between append () and extend () methods? 
+and = append() adds a single element, while extend() adds multiple elements.
+Use append() when you want to add a single item to the end of the list.
+Use extend() when you want to add all elements from an iterable to the end of the list individually.
+
+Q4.  How will you compare two lists? 
+ans = l1 = [10, 20, 30, 40, 50]
+l2 = [20, 30, 50, 40, 70]
+l1.sort()
+l2.sort()
+if l1 == l2:
+    print("The lists l1 and l2 are the same")
+else:
+    print("The lists l1 and l2 are not the same")
+
+
+Q5. 
