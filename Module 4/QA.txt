@@ -1,0 +1,149 @@
+Q1. What is File function in python? What is keywords to create and write file?
+Ans = The key function for working with files in Python is the open() function.
+The open() function takes two parameters; filename, and mode. 
+There are four different methods (modes) for opening a file: "r" - Read - Default value. 
+Opens a file for reading, error if the file does not exist.
+
+create - f = open("myfile.txt", "x")
+write  - f = open("myfile.txt", "w")
+
+Q2.Explain Exception handling? What is an Error in Python? 
+Ans = The requirement for handling exceptions in Python arises when an error occurs that can cause the program to terminate. 
+Errors interrupt the flow of the program at the point where they appear, 
+so any further code stops executing. This error is called an exception
+
+Error in Python :-
+1.Syntax error
+This kind of error occurs when the syntax within the code is wrong. 
+It causes the program to terminate. This is usually the result of an oversight on the programmer's part. 
+Syntax errors cannot be guessed, foreseen or handled. Programmers can remove them manually by reviewing the code.
+
+2.Exceptions
+When the code is syntactically correct, but it still results in an error because of some internal events, 
+it is called an exception. It does not stop the execution, but it changes the normal flow of the program. 
+These are usually logical errors that are non-fatal and recoverable by user programs. 
+Programmers can handle exceptions at the run time through exception handling methods.
+
+Q3.How many except statements can a try-except block have? Name Some built-in exception classes
+Ans = You can have multiple try blocks in a program but only one except statement with each try block
+
+Name of Some Exception classes :-
+1.AttributeError - Raised when attribute assignment or reference fails.
+2.FloatingpointError - Raised when a floating point operation fails.
+3.NameError  - 	Raised when a variable is not found in local or global scope.
+4.IndexError -	Raised when the index of a sequence is out of range.
+5.ZeroDivisionError - 	Raised when the second operand of division or modulo operation is zero.
+6.ValueError - Raised when a function gets an argument of correct type but improper value.
+7.SystemError - Raised when interpreter detects internal error.
+8.RuntimeError - Raised when an error does not fall under any other category.
+9.StopIteration - Raised by next() function to indicate that there is no further item to be returned by iterator.
+10.ImportError - Raised when the imported module is not found.
+
+
+Q4.When will the else part of try-except-else be executed?
+Ans =  The else part is executed when no exception occurs.
+
+Q5.Can one block of except statements handle multiple exception? 
+Ans = Yes, a single block of except statements in Python can handle multiple exceptions.
+
+Q6.When is the finally block executed?
+Ans = A finally block always executes, regardless of whether an exception is thrown. 
+
+Q7.What happens when „1‟== 1 is executed?
+Ans = We get a False
+
+Q8.How Do You Handle Exceptions With Try/Except/Finally In Python?Explain with coding snnipets.
+Ans = If there is no exception, then only try clause will run, except clause will not get executed. 
+If any exception occurs, the try clause will be skipped and except clause will run. If any exception occurs,
+but the except clause within the code doesn't handle it, it is passed on to the outer try statements.
+
+example =  
+def divide(x, y): 
+	try: 
+		result = x // y 
+	except ZeroDivisionError: 
+		print("Sorry ! You are dividing by zero ") 
+	else:
+		print("Yeah ! Your answer is :", result) 
+	finally: 
+		
+		print('This is always executed')
+divide(3, 2) 
+divide(3, 0)
+
+
+Q9.What are oops concepts? Is multiple inheritance supported in java 
+Ans = There are four fundamental concepts of Object-oriented programming – 
+Inheritance, Encapsulation, Polymorphism, and Data abstraction. 
+It is essential to know about all of these in order to understand OOPs.
+
+Java doesn't support Multiple Inheritance.
+
+Q10.How to Define a Class in Python? What Is Self? Give An Example Of A Python Class
+Ans = A class in Python can be defined using the class keyword
+
+Self -  Self represents the instance of class. 
+This handy keyword allows you to access variables, attributes, and methods of a defined class in Python.
+
+Example - class mynumber:
+	def __init__(self, value):
+		self.value = value
+	
+	def print_value(self):
+		print(self.value)
+
+obj1 = mynumber(17)
+obj1.print_value()
+
+
+Q11.Explain Inheritance in Python with an example? What is init? Or What Is A Constructor In Python?
+Ans = Inheritance :- 
+Inheritance relationship defines the classes that inherit from other classes as derived, subclass, or sub-type classes
+
+Example:-
+def speak(self):  
+
+        print(“Animal Speaking”)  
+
+#The child class Dog inherits the base class Animal  
+
+class Dog(Animal):  
+
+    def bark(self):  
+
+        print(“dog barking”)  
+
+#The child class Dogchild inherits another child class Dog  
+
+class DogChild(Dog):  
+
+    def eat(self):  
+
+        print(“Eating bread…”)  
+
+d = DogChild()  
+
+d.bark()  
+
+d.speak()  
+
+d.eat() 
+
+
+
+what is init :- 
+The init method in Python is a fundamental component of object-oriented programming, 
+serving as the constructor that initializes object attributes upon instantiation
+
+what is A Constructor in Python :-
+a special class method for creating and initializing an object instance at that class
+
+
+Q12.What is Instantiation in terms of OOP terminology?
+Ans = Instantiation − The creation of an instance of a class. Method − A special kind of function that is defined in a class definition. 
+Object − A unique instance of a data structure that's defined by its class. 
+An object comprises both data members (class variables and instance variables) and methods.
+
+Q13.What is used to check whether an object o is an instance of class A?
+Ans = The instanceof operator allows to check whether an object belongs to a certain class. 
+It also takes inheritance into account. Such a check may be necessary in many cases.
