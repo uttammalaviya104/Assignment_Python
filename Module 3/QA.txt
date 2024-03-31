@@ -27,4 +27,96 @@ else:
     print("The lists l1 and l2 are not the same")
 
 
-Q5. 
+Q5. What is tuple? Difference between list and tuple.
+ans = 1.Tuples:
+A tuple is an immutable data structure in Python.
+It represents an ordered collection of elements.
+Tuples are created using parentheses () and can contain any type of data (e.g., numbers, strings, other tuples).
+Once a tuple is created, its elements cannot be modified or changed.
+Tuples are generally used for fixed data, such as coordinates, database records, or function return value.
+
+2.Lists:
+A list is a mutable data structure in Python.
+It also represents an ordered collection of elements.
+Lists are created using square brackets [].
+Unlike tuples, lists can be modified (elements added, removed, or changed) after creation.
+Lists are commonly used for dynamic data, such as storing user inputs or managing data during program execution.
+
+
+Q6.How will you create a dictionary using tuples in python?
+ans = create a dictionary using tuples in Python by converting a list of tuples 
+tuple1 = ("apple", 10)
+tuple2 = ("banana", 5)
+tuple3 = ("cherry", 8)
+
+my_dict = dict([tuple1, tuple2, tuple3])
+
+print(my_dict)
+
+Q7.How Do You Traverse Through A Dictionary Object In Python? 
+ans =1. Using .values() method 
+You can iterate through all the values of a dictionary using the .values() method. 
+This approach allows you to process or display
+ each individual value without explicitly referencing the corresponding keys.
+
+2.Using .keys() method
+To access the keys of a dictionary, you can use the built-in .keys() method. 
+It returns a view object displaying a list of all the keys in the dictionary.
+
+
+Q8.How Do You Check The Presence Of A Key In A Dictionary? 
+ans = 1.Using the in Operator:
+The simplest way to check if a key exists in a dictionary is to use the in operator.
+ It evaluates the membership of a value (in this case, the key) and returns True if the key exists or False if it doesn’t.
+
+2.Using the .get() Method:
+The .get(key) method retrieves the value associated with the given key.
+ If the key exists, it returns the value; otherwise, it returns None.
+
+
+
+Q9.Why Do You Use the Zip () Method in Python?
+and = The zip() function in Python is used to combine two or more iterable dictionaries into a single iterable, 
+where corresponding elements from the input iterable are paired together as tuples
+
+Q10.How Many Basic Types Of Functions Are Available In Python?
+ans = There are mainly two types of functions in Python. Built-in library function: These are Standard functions in Python that are available to use. User-defined function:
+ We can create our own functions based on our requirements.
+
+Q11.How can you pick a random item from a list or tuple?
+ans = enerate a random item from the tuple using random. 
+choice() method(This function returns a random element from the specified sequence i.e tuple here) by passing the input 
+tuple as an argument to the choice() function. Print the generated random tuple item.
+
+Q12.How can you pick a random item from a range?
+ans = Use the random. randrange() function(Returns a random number within the specified range)
+ to generate a random number within the given range by passing minimum, and maximum numbers as arguments.
+
+
+Q13.How can you get a random number in python?
+ans = use random. randint(a, b) to generate a random integer between a and b, inclusive.
+
+
+Q14.How will you set the starting value in generating random numbers? 
+ans = The seed() method is used to initialize the random number generator.
+
+Q15.How will you randomizes the items of a list in place?To shuffle a list in Python, 
+you can use the shuffle() function from the random module to randomly rearrange elements in a list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
